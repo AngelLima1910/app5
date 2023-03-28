@@ -1,0 +1,24 @@
+<h2>Componentes</h2>
+<table border="2">
+    <thead>
+        <tr>
+            <th>Nombre</th>
+            <th>Marca</th>
+            <th>Modelo</th>
+            <th>Memoria</th>
+            <th>Procesador</th>
+            <th>Disco duro</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let lista of hardware">
+            <td>{{ lista.nombre}}</td>
+            <td>{{ lista.marca }}</td>
+            <td>{{ lista.modelo }}</td>
+            <td>{{ lista.memoria}}</td>
+            <td>{{ lista.procesador }}</td>
+            <td>{{ lista.discoDuro }}</td>
+        </tr>
+
+    </tbody>
+</table>
